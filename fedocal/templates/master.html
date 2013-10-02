@@ -14,6 +14,8 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    <div id="wrap">
+
     {% block content_titles %}
         <header id="mainheader">
             <h1>
@@ -32,7 +34,6 @@
         </ul>
       {% endif %}
     {% endwith %}
-
     <div id="content">
         {% block content %}{% endblock %}
 
@@ -133,6 +134,7 @@
                 target="_blank">Bugs & Improvements</a>
         </footer>
     </div>
+</div>
 
     {% block jscripts %}
     <script type="text/javascript"
