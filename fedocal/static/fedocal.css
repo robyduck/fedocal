@@ -39,6 +39,16 @@ a {
     color: orange;
 }
 
+#header {
+    height: 87px;
+}
+
+#kojiLogo {
+    /* Used only for the koji logo icon */
+    display:inline-block;
+    padding-top:8px;
+}
+
 header#mainheader, footer {
     color: white;
     background: #426ead; /* Old browsers */
@@ -105,8 +115,9 @@ section nav {
 }
 
 #content {
+    clear: both;
+    margin: 30px 20px 0;
     position: relative;
-    margin: .5em;
     /* for the menu */
     padding-left: 210px;
 }

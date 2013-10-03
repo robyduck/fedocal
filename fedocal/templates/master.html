@@ -17,12 +17,10 @@
     <div id="wrap">
 
     {% block content_titles %}
-        <header id="mainheader">
-            <h1>
-                <img alt="Fedora Calendar{% if title_extent is defined %} - {% endif %}" src="{{ url_for('static', filename='fedora-logo.png') }}" />
-                {% if title_extent is defined %}<span>{{ title_extent }}</span>{% endif %}
-            </h1>
-        </header>
+        <div id="header">
+            <img src="{{ url_for('static', filename='fedocal-logo.png') }}"
+            alt="Fedocal Logo" id="kojiLogo"/>
+        </div>
     {% endblock %}
 
     {% with messages = get_flashed_messages(with_categories=true) %}
